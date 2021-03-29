@@ -57,14 +57,14 @@ body {
 	background-color: var(--clr-accent-red);
 	font-family: var(--ff-normal);
 	color: var(--clr-text);
-	min-height: 100vh;
+	min-height: calc(100 * var(--vh));
 	width: 100%;
 }
 
 .landing {
 	z-index: 2;
 	width: 100%;
-	min-height: 100vh;
+	min-height: calc(100 * var(--vh));
 	background-color: var(--bg-clr);
 	position: absolute;
 	top: 0;
@@ -198,7 +198,7 @@ header {
 
 .menu {
 	width: max-content;
-	min-height: 100vh;
+	min-height: calc(100 * var(--vh));
 	background-color: var(--clr-accent-red);
 	position: absolute;
 	right: 0;
