@@ -57,7 +57,7 @@ body {
 	background-color: var(--clr-accent-red);
 	font-family: var(--ff-normal);
 	color: var(--clr-text);
-	min-height: calc(100 * var(--vh));
+	height: 100%;
 	width: 100%;
 }
 
@@ -198,7 +198,7 @@ header {
 
 .menu {
 	width: max-content;
-	min-height: calc(100 * var(--vh));
+	height: calc(100 * var(--vh));
 	background-color: var(--clr-accent-red);
 	position: absolute;
 	right: 0;
