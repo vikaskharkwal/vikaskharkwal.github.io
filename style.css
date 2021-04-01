@@ -271,7 +271,7 @@ li .social-icons {
 footer {
 	background-color: var(--clr-neutral-700);
 	text-align: center;
-	padding: 2rem;
+	padding: 2rem 0.5rem;
 }
 
 .footer-span i:first-of-type {
@@ -315,6 +315,10 @@ footer {
 	header {
 		padding: 0.5rem;
 		position: relative;
+	}
+
+	footer {
+		font-size: 0.8rem;
 	}
 	.menu {
 		width: 70vw;
