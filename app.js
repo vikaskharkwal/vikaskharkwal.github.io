@@ -32,41 +32,6 @@ toggle.addEventListener("keypress", evt => {
 })
 
 
-let theme = localStorage.getItem("theme");
-const osLevelThemePreference = window.matchMedia("(prefers-color-scheme: dark)")
-
-if (theme === null) {
-    if (osLevelThemePreference.matches) {
-        root.classList.add("dark-mode");
-        checkbox.checked = true
-        theme = "dark"
-    } else {
-        root.classList.remove("dark-mode");
-        checkbox.checked = false
-        theme = "light"
-    }
-} else if (theme === "dark") {
-    root.classList.toggle("dark-mode");
-    checkbox.checked = true
-} else if (theme === "light") {
-    if (root.classList.contains("dark-mode")) {
-        root.classList.toggle("dark-mode");
-    }
-}
-
-
-modeSwitch.addEventListener("input", () => {
-    root.classList.toggle("dark-mode");
-    if (!root.classList.contains("dark-mode")) {
-        theme = "light";
-    }
-    else {
-        theme = "dark";
-    }
-
-    localStorage.setItem("theme", theme);
-})
-
 function menuEvent() {
     landing.classList.toggle("move");
     if (toggle.classList.contains("close-menu")) {
@@ -84,6 +49,15 @@ root.style.setProperty('--vh', window.innerHeight / 100 + 'px');
 
 window.addEventListener('resize', () => {
     root.style.setProperty('--vh', window.innerHeight / 100 + 'px');
-    console.log(window.innerHeight);
 })
+
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity(elem, {
+    // options
+    cellAlign: 'left',
+    contain: true,
+    autoPlay: 5000,
+    wrapAround: true,
+});
+
 

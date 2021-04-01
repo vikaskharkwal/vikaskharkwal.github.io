@@ -1,0 +1,7 @@
+--clr-main-accent: #e64e4e;
+--clr-other-accent: #add8e6;
+--clr-neutral-100: #ededed;
+--clr-neutral-500: #3d3d3d;
+--clr-neutral-700: #1f1f1f;
+--clr-neutral-900: #0c0e16;
+--ff-normal: Poppins, sans-serif;

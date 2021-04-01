@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berserkwal</title>
+    <title>Vikas Kharkwal</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-home.css">
     <script src="https://kit.fontawesome.com/3a1e4c9014.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,19 +17,7 @@
     <main class="landing">
         <header>
             <div class="logo">
-                <a href="index.html" class="logo-image">B</a>
-                <div class="logo-text">
-                    <span class="span-1">e</span>
-                    <span class="span-2">r</span>
-                    <span class="span-3">s</span>
-                    <span class="span-4">e</span>
-                    <span class="span-5">r</span>
-                    <span class="span-6">k</span>
-                    <span class="span-7">w</span>
-                    <span class="span-8">a</span>
-                    <span class="span-9">l</span>
-                    <span class="span-10">_</span>
-                </div>
+                <a href="index.html" class="logo-image"><img src="assets/logo.png" alt=""></a>
             </div>
             <div class="menu-toggle" tabindex="0" role="button">
                 <div id="hamburger">
@@ -36,6 +27,97 @@
                 </div>
             </div>
         </header>
+        <section class="content content-about">
+            <div class=" card about-card">
+                <h1 class="main-heading">Hi there!</h1>
+                <div class="owner-image"><img src="assets/vikaskharkwal_image.jpg" alt="owner image"></div>
+                <p class="main-para">I am <strong>Vikas Kharkwal</strong>, but I also go by the name
+                    <strong>Berserkwal</strong>. I am a
+                    Computer Science
+                    Engineering student
+                    interested in the web and a graphic design enthusiast. I love experimenting with CSS and JavaScript
+                    DOM manipulation, coming up with exiting new designs in the process.
+                </p>
+                <p class="other-para">This website is a way for me to share what I’ve already learned and what
+                    I am meant to
+                    learn in the future by the means of different projects.</p>
+
+                <a href="about.html" class="button about-button">More about me</a>
+            </div>
+        </section>
+        <section class="content content-portfolio">
+            <div class=" card proj-card">
+                <h2 class="other-heading">Project highlight</h2>
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <a class="mini-card" target="_blank"
+                            href="https://berserkwal.github.io/Badminton-Score-Keeper/">
+                            <img class="img img-one" src="assets/card-image-1.png" alt="">
+                            <span class="placeholder">Badminton Score Keeper</span>
+                            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus,
+                                maxime
+                                autem laborum ut, suscipit et facilis aperiam voluptatum totam facere optio distinctio
+                                eligendi aspernatur cumque. Vitae vel quae deleniti!</p>
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a class="mini-card" target="_blank"
+                            href="https://berserkwal.github.io/Badminton-Score-Keeper/">
+                            <img class="img img-one" src="assets/card-image-2.png" alt="">
+                            <span class="placeholder">Color Randomizer</span>
+                            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus,
+                                maxime
+                                autem laborum ut, suscipit et facilis aperiam voluptatum totam facere optio distinctio
+                                eligendi aspernatur cumque. Vitae vel quae deleniti!</p>
+                        </a>
+                    </div>
+                    <div class="carousel-cell">
+                        <a class="mini-card" target="_blank"
+                            href="https://berserkwal.github.io/Badminton-Score-Keeper/">
+                            <img class="img img-one" src="assets/card-image-1.png" alt="">
+                            <span class="placeholder">Badminton Score Keeper</span>
+                            <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus,
+                                maxime
+                                autem laborum ut, suscipit et facilis aperiam voluptatum totam facere optio distinctio
+                                eligendi aspernatur cumque. Vitae vel quae deleniti!</p>
+                        </a>
+                    </div>
+                    <a href="portfolio.html" class="carousel-cell mini-card more-mini-card ">
+                        <span class="more">More projects</span>
+                        <div class="more-card-arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="content content-contact">
+            <div class="card contact-card">
+                <h2 class="other-heading">Follow me</h2>
+                <div class="card-grid">
+                    <a href="https://www.facebook.com/vikaskharkwal" class="grid-cell face" target="_blank">
+                        <i class="ico fa fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/vikas.kharkwal/" class="grid-cell inst" target="_blank">
+                        <i class="ico fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://www.twitter.com/vikaskharkwal/" class="grid-cell twit" target="_blank">
+                        <i class="ico fa fa-twitter-square"></i>
+                    </a>
+                    <a href="https://www.github.com/berserkwal/" class="grid-cell gith" target="_blank">
+                        <i class="ico fa fa-github-square"></i>
+                    </a>
+                    <a href="https://www.codepen.io/berserkwal/" class="grid-cell code" target="_blank">
+                        <i class="ico fa fa-codepen"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vikaskharkwal/" class="grid-cell link" target="_blank">
+                        <i class="ico fa fa-linkedin-square"></i>
+                    </a>
+                </div>
+                <div class="reach-out-div">
+                    <span class="reach-out">Or reach out to me...</span>
+                    <a href="contact.html" class="button contact-button">Contact info</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <section class="menu">
@@ -44,30 +126,31 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="social">
-                <span>Social Media</span>
                 <div class="social-icons">
-                    <a class="face-icon soci" href="https://www.facebook.com/vikaskharkwal" target="_blank"><i
-                            class="fa fa-facebook-square"></i></a>
-                    <a class="inst-icon soci" href="https://www.instagram.com/vikas.kharkwal/" target="_blank"><i
-                            class="fab fa-instagram-square"></i></a>
-                    <a class="gith-icon soci" href="https://github.com/berserkwal" target="_blank"><i
-                            class="fa fa-github-square"></i></a>
-                    <a class="link-icon soci" href="https://www.linkedin.com/in/vikaskharkwal/" target="_blank"><i
-                            class="fa fa-linkedin-square"></i></a>
+                    <a class="face-icon soci" href="https://www.facebook.com/vikaskharkwal" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a class="inst-icon soci" href="https://www.instagram.com/vikas.kharkwal/" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://www.twitter.com/vikaskharkwal/" class="link-icon soci">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                    <a class="gith-icon soci" href="https://github.com/berserkwal" target="_blank">
+                        <i class="fa fa-github-square"></i>
+                    </a>
+                    <a href="https://www.codepen.io/berserkwal/" class="link-icon soci" target="_blank">
+                        <i class="ico fa fa-codepen"></i>
+                    </a>
+                    <a class="link-icon soci" href="https://www.linkedin.com/in/vikaskharkwal/" target="_blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
                 </div>
             </li>
-
         </ul>
-        <label class="light-switch">
-            <h3 class="mode-label">Dark Mode &nbsp;</h3>
-            <div class="mode-toggle">
-                <input type="checkbox" class="mode-check">
-                <span class="slider"></span>
-            </div>
-        </label>
     </section>
 
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="app.js"></script>
 </body>
 
