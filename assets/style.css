@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Poppins:wght@300;400;500;700;900&display=swap");
 
-/* @font-face {
-	font-family: "Heorot";
-	src: url("https://berserkwal.github.io/assets/fonts/heorot-webfont.woff2")
-			format("woff2"),
-		url("https://berserkwal.github.io/assets/fonts/heorot-webfont.woff")
-			format("woff");
-	font-weight: normal;
-	font-style: normal;
-} */
-
 :root {
 	--clr-accent-purple-smoke: #917be3;
 	--clr-accent-electro-green: #cdf734;

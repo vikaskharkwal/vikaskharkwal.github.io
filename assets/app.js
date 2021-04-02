@@ -51,13 +51,15 @@ window.addEventListener('resize', () => {
     root.style.setProperty('--vh', window.innerHeight / 100 + 'px');
 })
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
+
+var flkty = new Flickity(".main-carousel", {
     // options
     cellAlign: 'left',
     contain: true,
+    autoPlay: true,
     autoPlay: 5000,
     wrapAround: true,
+    imagesLoaded: true,
 });
 
 

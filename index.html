@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikas Kharkwal</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="assets/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style-home.css">
     <script src="https://kit.fontawesome.com/3a1e4c9014.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <main class="landing">
         <header>
             <div class="logo">
-                <a href="index.html" class="logo-image"><img src="assets/logo.png" alt=""></a>
+                <a href="index.html" class="logo-image" aria-label="homepage link"><img src="assets/logo.png"
+                        alt=""></a>
             </div>
-            <div class="menu-toggle" tabindex="0" role="button">
+            <div class="menu-toggle" tabindex="0" role="button" aria-label="menu toggle">
                 <div id="hamburger">
                     <span class="ham-t"></span>
                     <span class="ham-m"></span>
@@ -42,7 +44,7 @@
                     I am meant to
                     learn in the future by the means of different projects.</p>
 
-                <a href="about.html" class="button about-button">More about me</a>
+                <a href="about.html" class="button about-button" aria-label="more info button">More about me</a>
             </div>
         </section>
         <section class="content content-portfolio">
@@ -51,7 +53,7 @@
                 <div class="main-carousel">
                     <div class="carousel-cell">
                         <a class="mini-card" target="_blank"
-                            href="https://berserkwal.github.io/Badminton-Score-Keeper/">
+                            rel="noreferrer" href="https://berserkwal.github.io/Badminton-Score-Keeper/">
                             <img class="img img-one" src="assets/card-image-1.png" alt="">
                             <span class="placeholder">Badminton Score Keeper</span>
                             <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus,
@@ -62,7 +64,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="mini-card" target="_blank"
-                            href="https://berserkwal.github.io/Badminton-Score-Keeper/">
+                            rel="noreferrer" href="https://berserkwal.github.io/Badminton-Score-Keeper/">
                             <img class="img img-one" src="assets/card-image-2.png" alt="">
                             <span class="placeholder">Color Randomizer</span>
                             <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus,
@@ -73,7 +75,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="mini-card" target="_blank"
-                            href="https://berserkwal.github.io/Badminton-Score-Keeper/">
+                            rel="noreferrer" href="https://berserkwal.github.io/Badminton-Score-Keeper/">
                             <img class="img img-one" src="assets/card-image-1.png" alt="">
                             <span class="placeholder">Badminton Score Keeper</span>
                             <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus,
@@ -82,7 +84,8 @@
                                 eligendi aspernatur cumque. Vitae vel quae deleniti!</p>
                         </a>
                     </div>
-                    <a href="portfolio.html" class="carousel-cell mini-card more-mini-card ">
+                    <a href="portfolio.html" class="carousel-cell mini-card more-mini-card "
+                        aria-label="more projects button">
                         <span class="more">More projects</span>
                         <div class="more-card-arrow"></div>
                     </a>
@@ -93,28 +96,38 @@
             <div class="card contact-card">
                 <h2 class="other-heading">Follow me</h2>
                 <div class="card-grid">
-                    <a href="https://www.facebook.com/vikaskharkwal" class="grid-cell face" target="_blank">
+                    <a rel="noreferrer" href="https://www.facebook.com/vikaskharkwal" class="grid-cell face"
+                        target="_blank"
+                        aria-label="facebook link">
                         <i class="ico fa fa-facebook-square"></i>
                     </a>
-                    <a href="https://www.instagram.com/vikas.kharkwal/" class="grid-cell inst" target="_blank">
+                    <a rel="noreferrer" href="https://www.instagram.com/vikas.kharkwal/" class="grid-cell inst"
+                        target="_blank"
+                        aria-label="instagram link">
                         <i class="ico fab fa-instagram-square"></i>
                     </a>
-                    <a href="https://www.twitter.com/vikaskharkwal/" class="grid-cell twit" target="_blank">
+                    <a rel="noreferrer" href="https://www.twitter.com/vikaskharkwal/" class="grid-cell twit"
+                        target="_blank"
+                        aria-label="twitter link">
                         <i class="ico fa fa-twitter-square"></i>
                     </a>
-                    <a href="https://www.github.com/berserkwal/" class="grid-cell gith" target="_blank">
+                    <a rel="noreferrer" href="https://www.github.com/berserkwal/" class="grid-cell gith" target="_blank"
+                        aria-label="github link">
                         <i class="ico fa fa-github-square"></i>
                     </a>
-                    <a href="https://www.codepen.io/berserkwal/" class="grid-cell code" target="_blank">
+                    <a rel="noreferrer" href="https://www.codepen.io/berserkwal/" class="grid-cell code" target="_blank"
+                        aria-label="codepen link">
                         <i class="ico fa fa-codepen"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/vikaskharkwal/" class="grid-cell link" target="_blank">
+                    <a rel="noreferrer" href="https://www.linkedin.com/in/vikaskharkwal/" class="grid-cell link"
+                        target="_blank"
+                        aria-label="linkedin link">
                         <i class="ico fa fa-linkedin-square"></i>
                     </a>
                 </div>
                 <div class="reach-out-div">
                     <span class="reach-out">Or reach out to me...</span>
-                    <a href="contact.html" class="button contact-button">Contact info</a>
+                    <a href="contact.html" class="button contact-button" aria-label="contact button">Contact info</a>
                 </div>
             </div>
         </section>
@@ -123,40 +136,46 @@
                 Kharkwal.</span>
         </footer>
     </main>
-
-
     <section class="menu">
         <ul class="menu-items">
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html" aria-label="about page link">About</a></li>
+            <li><a href="portfolio.html" aria-label="portfolio page link">Portfolio</a></li>
+            <li><a href="contact.html" aria-label="contact page link">Contact</a></li>
             <li class="social">
                 <div class="social-icons">
-                    <a class="face-icon soci" href="https://www.facebook.com/vikaskharkwal" target="_blank">
+                    <a class="face-icon soci" rel="noreferrer" href="https://www.facebook.com/vikaskharkwal"
+                        target="_blank"
+                        aria-label="facebook link">
                         <i class="fa fa-facebook-square"></i>
                     </a>
-                    <a class="inst-icon soci" href="https://www.instagram.com/vikas.kharkwal/" target="_blank">
+                    <a class="inst-icon soci" rel="noreferrer" href="https://www.instagram.com/vikas.kharkwal/"
+                        target="_blank"
+                        aria-label="instagram link">
                         <i class="fab fa-instagram-square"></i>
                     </a>
-                    <a href="https://www.twitter.com/vikaskharkwal/" class="link-icon soci">
+                    <a rel="noreferrer" href="https://www.twitter.com/vikaskharkwal/" class="link-icon soci"
+                        aria-label="twitter link">
                         <i class="fa fa-twitter-square"></i>
                     </a>
-                    <a class="gith-icon soci" href="https://github.com/berserkwal" target="_blank">
+                    <a class="gith-icon soci" rel="noreferrer" href="https://github.com/berserkwal" target="_blank"
+                        aria-label="github link">
                         <i class="fa fa-github-square"></i>
                     </a>
-                    <a href="https://www.codepen.io/berserkwal/" class="link-icon soci" target="_blank">
+                    <a rel="noreferrer" href="https://www.codepen.io/berserkwal/" class="link-icon soci" target="_blank"
+                        aria-label="codepen link">
                         <i class="ico fa fa-codepen"></i>
                     </a>
-                    <a class="link-icon soci" href="https://www.linkedin.com/in/vikaskharkwal/" target="_blank">
+                    <a class="link-icon soci" rel="noreferrer" href="https://www.linkedin.com/in/vikaskharkwal/"
+                        target="_blank"
+                        aria-label="linkedin link">
                         <i class="fa fa-linkedin-square"></i>
                     </a>
                 </div>
             </li>
         </ul>
     </section>
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="app.js"></script>
+    <script src="assets/flickity.pkgd.min.js"></script>
+    <script src="assets/app.js"></script>
 </body>
 
 </html>
