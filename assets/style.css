@@ -399,6 +399,20 @@ footer {
 	/* transform-origin: left; */
 }
 
+.button.non-shape-button {
+	position: relative;
+	display: inline-block;
+	/* color: var(--clr-neutral-900); */
+	padding: 0.3rem 1rem;
+	/* background-color: var(--clr-accent-purple-smoke); */
+	margin: 1rem;
+	clip-path: none;
+}
+
+.button.non-shape-button::after {
+	display: none;
+}
+
 .main-para {
 	text-align: left;
 }

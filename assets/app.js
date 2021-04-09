@@ -57,7 +57,7 @@ var flkty = new Flickity(".main-carousel", {
     cellAlign: 'left',
     contain: true,
     autoPlay: true,
-    autoPlay: 5000,
+    autoPlay: 10000,
     wrapAround: true,
     imagesLoaded: true,
 });
