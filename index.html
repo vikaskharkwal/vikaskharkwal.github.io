@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikas Kharkwal</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/flickity.min.css" media="screen">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/style-home.css">
-    <script src="https://kit.fontawesome.com/3a1e4c9014.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style-home.css">
+    <script src="https://kit.fontawesome.com/3a1e4c9014.js"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -18,10 +18,23 @@
     <main class="landing">
         <header>
             <div class="logo">
-                <a href="index.html" class="logo-image" aria-label="homepage link"><img src="assets/logo.png"
+                <a href="./index.html" class="logo-image"
+                    aria-label="homepage link"><img src="./assets/logo.png"
                         alt=""></a>
             </div>
-            <div class="menu-toggle" tabindex="0" role="button" aria-label="menu toggle">
+            <section class="menu-vert">
+                <ul class="menu-items menu-items-vert">
+                    <li><a href="#about"
+                            aria-label="about page link">About</a></li>
+                    <li><a href="#projects"
+                            aria-label="portfolio page link">Projects</a>
+                    </li>
+                    <li><a href="#contact"
+                            aria-label="contact page link">Contact</a></li>
+                </ul>
+            </section>
+            <div class="menu-toggle" tabindex="0" role="button"
+                aria-label="menu toggle">
                 <div id="hamburger">
                     <span class="ham-t"></span>
                     <span class="ham-m"></span>
@@ -29,159 +42,224 @@
                 </div>
             </div>
         </header>
-        <section class="content content-about">
+        <section class="content content-about" id="about">
             <div class=" card about-card">
                 <h1 class="main-heading">Hi there!</h1>
-                <div class="owner-image"><img src="assets/vikaskharkwal_image.jpg" alt="owner image"></div>
-                <p class="main-para">I am <strong>Vikas Kharkwal</strong>, but I also go by the name
+                <div class="owner-image"><img
+                        src="./assets/vikaskharkwal_image.jpg"
+                        alt="owner image">
+                </div>
+                <p class="main-para">I am <strong>Vikas Kharkwal</strong>, but I
+                    also go by the name
                     <strong>Berserkwal</strong>. I am a
                     Computer Science
                     Engineering student
-                    interested in the web and a graphic design enthusiast. I love experimenting with CSS and JavaScript
-                    DOM manipulation, coming up with exiting new designs in the process.
+                    interested in the web and a graphic design enthusiast. I
+                    love experimenting with CSS and JavaScript
+                    DOM manipulation, coming up with exiting new designs in the
+                    process.
                 </p>
-                <p class="other-para">This website is a way for me to share what I’ve already learned and what
+                <p class="other-para">This website is a way for me to share what
+                    I’ve already learned and what
                     I am meant to
                     learn in the future by the means of different projects.</p>
 
-                <a href="about.html" class="button about-button" aria-label="more info button">More about me</a>
+                <a href="#contact" class="button about-button"
+                    aria-label="more info button">Connect with me</a>
             </div>
         </section>
-        <section class="content content-portfolio">
+        <section class="content content-portfolio" id="projects">
             <div class=" card proj-card">
-                <h2 class="other-heading">Project highlight</h2>
-                <div class="main-carousel">
-                    <div class="carousel-cell">
-                        <div class="mini-card">
-                            <img class="img img-one" src="assets/bsk_.gif" alt="">
-                            <span class="placeholder">Badminton Score Keeper</span>
-                            <p class="info">A score keeper for a game of badminton that also allows you to play a
-                                7-point, 11-point or 21-point game, keeping in mind the rule of winning-by-two (deuce).
-                            </p>
-                            <a class="button non-shape-button" target="_blank"
-                                rel="noreferrer" href="https://berserkwal.github.io/Badminton-Score-Keeper/"><i
-                                    class="far fa-eye"></i>&nbsp;View
-                                here</a>
-                            <a class="button non-shape-button" target="_blank"
-                                rel="noreferrer" href="https://www.github.com/berserkwal/Badminton-Score-Keeper/">Source
-                                code <i class="far fa-file-code"></i>&nbsp;</a>
-                        </div>
+                <h2 class="other-heading">Projects</h2>
+                <div class="grid-container">
+                    <div class="mini-card card-1">
+                        <img src="./assets/eas.png"
+                            alt="Etch-A-Sketch preview image">
+                        <span class="mini-card-title">Etch-A-Sketch</span>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://berserkwal.github.io/etch-a-sketch/"><i
+                                class="far fa-eye"></i>&nbsp;Live Demo</a>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/berserkwal/etch-a-sketch/">Source
+                            code <i class="far fa-file-code"></i>&nbsp;</a>
                     </div>
-                    <div class="carousel-cell">
-                        <div class="mini-card">
-                            <img class="img img-one" src="assets/rccg_.gif" alt="">
-                            <span class="placeholder">Random Complementary Color Genereator</span>
-                            <p class="info">A random color generator that generates cool random color combos that follow
-                                the Complementary rule of color theory.</p>
-                            <a class="button non-shape-button" target="_blank"
-                                rel="noreferrer"
-                                href="https://berserkwal.github.io/random-complementary-color-generator/"><i
-                                    class="far fa-eye"></i>&nbsp;View
-                                here</a>
-                            <a class="button non-shape-button" target="_blank"
-                                rel="noreferrer"
-                                href="https://www.github.com/berserkwal/random-complementary-color-generator/">Source
-                                code <i class="far fa-file-code"></i>&nbsp;</a>
-                        </div>
+                    <div class="mini-card card-2">
+                        <img src="./assets/rps.png"
+                            alt="Rock-Paper-Scissors preview image">
+                        <span class="mini-card-title">Rock-Paper-Scissors</span>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://berserkwal.github.io/rock-paper-scissors/"><i
+                                class="far fa-eye"></i>&nbsp;Live Demo</a>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/berserkwal/rock-paper-scissors/">Source
+                            code <i class="far fa-file-code"></i>&nbsp;</a>
                     </div>
-                    <div class="carousel-cell">
-                        <div class="mini-card">
-                            <img class="img img-one" src="assets/ttc_.gif" alt="">
-                            <span class="placeholder">2 Player Tic-Tac-Toe</span>
-                            <p class="info">A local two player Tic-Tac-Toe game that is just fun to play with your
-                                friends. This is fully responsive and works on mobile devices as well as it runs on
-                                desktop.</p>
-                            <a class="button non-shape-button" target="_blank"
-                                rel="noreferrer" href="https://berserkwal.github.io/tic-tac-toe/"><i
-                                    class="far fa-eye"></i>&nbsp;View
-                                here</a>
-                            <a class="button non-shape-button" target="_blank"
-                                rel="noreferrer" href="https://www.github.com/berserkwal/tic-tac-toe/">Source
-                                code <i class="far fa-file-code"></i>&nbsp;</a>
-                        </div>
+                    <div class="mini-card card-3">
+                        <img src="./assets/pg.png"
+                            alt="Password Generator preview image">
+                        <span class="mini-card-title">Password Generator</span>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://berserkwal.github.io/password-generator/"><i
+                                class="far fa-eye"></i>&nbsp;Live Demo</a>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/berserkwal/password-generator/">Source
+                            code <i class="far fa-file-code"></i>&nbsp;</a>
                     </div>
-                    <a href="portfolio.html" class="carousel-cell mini-card more-mini-card "
-                        aria-label="more projects button">
-                        <span class="more">More projects</span>
-                        <div class="more-card-arrow"></div>
-                    </a>
+                    <div class="mini-card card-4">
+                        <img src="./assets/ttt.png"
+                            alt="Tic-Tac-Toe preview image">
+                        <span class="mini-card-title">Tic-Tac-Toe</span>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://berserkwal.github.io/tic-tac-toe/"><i
+                                class="far fa-eye"></i>&nbsp;Live Demo</a>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/berserkwal/Badminton-Score-Keeper/">Source
+                            code <i class="far fa-file-code"></i>&nbsp;</a>
+                    </div>
+                    <div class="mini-card card-5">
+                        <img src="./assets/jsc.png"
+                            alt="JavaScript Calculator preview image">
+                        <span class="mini-card-title">JavaScript
+                            Calculator</span>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://berserkwal.github.io/javascript-calculator/"><i
+                                class="far fa-eye"></i>&nbsp;Live Demo</a>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/berserkwal/javascript-calculator/">Source
+                            code <i class="far fa-file-code"></i>&nbsp;</a>
+                    </div>
+                    <div class="mini-card card-6">
+                        <img src="./assets/bsk.png"
+                            alt="Badminton Score Keeper preview image">
+                        <span class="mini-card-title">Badminton Score
+                            Keeper</span>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://berserkwal.github.io/Badminton-Score-Keeper/"><i
+                                class="far fa-eye"></i>&nbsp;Live Demo</a>
+                        <a class="button non-shape-button" target="_blank"
+                            rel="noreferrer"
+                            href="https://www.github.com/berserkwal/Badminton-Score-Keeper/">Source
+                            code <i class="far fa-file-code"></i>&nbsp;</a>
+                    </div>
                 </div>
+                <a rel="noreferrer" href="https://github.com/berserkwal"
+                    target="_blank"
+                    class="button projects-button"
+                    aria-label="contact button">More Projects</a>
+
             </div>
         </section>
-        <section class="content content-contact">
+        <section class="content content-contact" id="contact">
             <div class="card contact-card">
                 <h2 class="other-heading">Follow me</h2>
                 <div class="card-grid">
-                    <a rel="noreferrer" href="https://www.facebook.com/vikaskharkwal" class="grid-cell face"
+                    <a rel="noreferrer"
+                        href="https://www.facebook.com/vikaskharkwal"
+                        class="grid-cell face"
                         target="_blank"
                         aria-label="facebook link">
                         <i class="ico fa fa-facebook-square"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.instagram.com/vikas.kharkwal/" class="grid-cell inst"
+                    <a rel="noreferrer"
+                        href="https://www.instagram.com/vikas.kharkwal/"
+                        class="grid-cell inst"
                         target="_blank"
                         aria-label="instagram link">
                         <i class="ico fab fa-instagram-square"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.twitter.com/vikaskharkwal/" class="grid-cell twit"
+                    <a rel="noreferrer"
+                        href="https://www.twitter.com/vikaskharkwal/"
+                        class="grid-cell twit"
                         target="_blank"
                         aria-label="twitter link">
                         <i class="ico fa fa-twitter-square"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.github.com/berserkwal/" class="grid-cell gith" target="_blank"
+                    <a rel="noreferrer"
+                        href="https://www.github.com/berserkwal/"
+                        class="grid-cell gith" target="_blank"
                         aria-label="github link">
                         <i class="ico fa fa-github-square"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.codepen.io/berserkwal/" class="grid-cell code" target="_blank"
+                    <a rel="noreferrer"
+                        href="https://www.codepen.io/berserkwal/"
+                        class="grid-cell code" target="_blank"
                         aria-label="codepen link">
                         <i class="ico fa fa-codepen"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.linkedin.com/in/vikaskharkwal/" class="grid-cell link"
+                    <a rel="noreferrer"
+                        href="https://www.linkedin.com/in/vikaskharkwal/"
+                        class="grid-cell link"
                         target="_blank"
                         aria-label="linkedin link">
                         <i class="ico fa fa-linkedin-square"></i>
                     </a>
                 </div>
                 <div class="reach-out-div">
-                    <span class="reach-out">Or reach out to me...</span>
-                    <a href="contact.html" class="button contact-button" aria-label="contact button">Contact info</a>
+                    <span class="reach-out">Or reach out to me via...</span>
+                    <a rel="noreferrer" href="mailto:kharkwalvikas@gmail.com"
+                        target="_blank"
+                        class="button contact-button"
+                        aria-label="email button">E-mail</a>
                 </div>
             </div>
         </section>
         <footer>
-            <span class="footer-span">Made with <i class="fa fa-heart"></i> and <i class="fa fa-laptop"></i> by Vikas
+            <span class="footer-span">Made with <i class="fa fa-heart"></i> and
+                <i class="fa fa-laptop"></i> by Vikas
                 Kharkwal.</span>
         </footer>
     </main>
     <section class="menu">
         <ul class="menu-items">
-            <li><a href="about.html" aria-label="about page link">About</a></li>
-            <li><a href="portfolio.html" aria-label="portfolio page link">Portfolio</a></li>
-            <li><a href="contact.html" aria-label="contact page link">Contact</a></li>
+            <li><a href="#about" aria-label="about page link">About</a></li>
+            <li><a href="#projects"
+                    aria-label="portfolio page link">Portfolio</a></li>
+            <li><a href="#contact"
+                    aria-label="contact page link">Contact</a></li>
             <li class="social">
                 <div class="social-icons">
-                    <a class="face-icon soci" rel="noreferrer" href="https://www.facebook.com/vikaskharkwal"
+                    <a class="face-icon soci" rel="noreferrer"
+                        href="https://www.facebook.com/vikaskharkwal"
                         target="_blank"
                         aria-label="facebook link">
                         <i class="fa fa-facebook-square"></i>
                     </a>
-                    <a class="inst-icon soci" rel="noreferrer" href="https://www.instagram.com/vikas.kharkwal/"
+                    <a class="inst-icon soci" rel="noreferrer"
+                        href="https://www.instagram.com/vikas.kharkwal/"
                         target="_blank"
                         aria-label="instagram link">
                         <i class="fab fa-instagram-square"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.twitter.com/vikaskharkwal/" class="link-icon soci"
+                    <a rel="noreferrer"
+                        href="https://www.twitter.com/vikaskharkwal/"
+                        class="link-icon soci"
                         aria-label="twitter link">
                         <i class="fa fa-twitter-square"></i>
                     </a>
-                    <a class="gith-icon soci" rel="noreferrer" href="https://github.com/berserkwal" target="_blank"
+                    <a class="gith-icon soci" rel="noreferrer"
+                        href="https://github.com/berserkwal" target="_blank"
                         aria-label="github link">
                         <i class="fa fa-github-square"></i>
                     </a>
-                    <a rel="noreferrer" href="https://www.codepen.io/berserkwal/" class="link-icon soci" target="_blank"
+                    <a rel="noreferrer"
+                        href="https://www.codepen.io/berserkwal/"
+                        class="link-icon soci" target="_blank"
                         aria-label="codepen link">
                         <i class="ico fa fa-codepen"></i>
                     </a>
-                    <a class="link-icon soci" rel="noreferrer" href="https://www.linkedin.com/in/vikaskharkwal/"
+                    <a class="link-icon soci" rel="noreferrer"
+                        href="https://www.linkedin.com/in/vikaskharkwal/"
                         target="_blank"
                         aria-label="linkedin link">
                         <i class="fa fa-linkedin-square"></i>
@@ -190,8 +268,7 @@
             </li>
         </ul>
     </section>
-    <script src="assets/flickity.pkgd.min.js"></script>
-    <script src="assets/app.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>
