@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Poppins:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --clr-accent-purple-smoke: #917be3;
+  --clr-accent-electro-green: #cdf734;
+  --clr-neutral-100: #ededed;
+  --clr-neutral-300: #575757;
+  --clr-neutral-500: #3d3d3d;
+  --clr-neutral-700: #1f1f1f;
+  --clr-neutral-900: #12141c;
+  --ff-code: 'Heorot', monospace;
+  --ff-normal: Poppins, sans-serif;
+  --box-shadow: 0 0px 15px #1d1d1d43;
+  --box-shadow-mode: 0 0px 15px #1d1d1d43;
+  --bg-clr: var(--clr-neutral-900);
+  --clr-text: var(--clr-neutral-100);
+  --switch-bg-on: var(--clr-accent-electro-green);
+  --switch-bg-off: rgb(237, 237, 237);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
